@@ -1,0 +1,29 @@
+/* :root{
+    /* .color1 { #eec950 };
+.color2 { #dab73c };
+.color3 { #c6a528 };
+.color4 { #b29314 };
+.color5 { #9e8100 }; */
+/* .color1 { #935340 };
+.color2 { #814331 };
+.color3 { #6f3421 };
+.color4 { #5c2412 };
+.color5 { #4a1402 }; */
+:root {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 1200px;
+  font-size: 16px;
+}
+.homePage {
+  background-image: url("../images/back_full.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+ul li a {
+  font-size: 14.8px;
+}
+.mask {
+  background-image: linear-gradient(to bottom, transparent, rgb(24 24 27));
+}

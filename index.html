@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="./assets/dist/tailwind.css" />
+    <meta
+      name="description"
+      content="Um Site de Campismo Onde Pessoas Podem sair para Aventuras Divertidas"
+    />
+    <title>Campus - Site de Campismo</title>
+  </head>
+  <body class="bg-zinc-900">
+    <header class="w-full h-screen homePage">
+      <div class="mask w-full h-full">
+        <div
+          class="navbar fixed top-0 left-0 right-0 flex items-center justify-between paisagem-tablet:justify-around w-full px-5 py-5"
+        >
+          <nav>
+            <ul class="flex items-center space-x-8">
+              <button class="text-white transition-all hover:text-slate-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 stroke-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+              <li class="paisagem-tablet:inline-block hidden">
+                <a
+                  href="#"
+                  class="text-white font-medium transition-all hover:text-slate-400"
+                  >Inicio</a
+                >
+              </li>
+              <li class="paisagem-tablet:inline-block hidden">
+                <a
+                  href="#"
+                  class="text-white font-medium transition-all hover:text-slate-400"
+                  >Sobre</a
+                >
+              </li>
+              <li class="paisagem-tablet:inline-block hidden">
+                <a
+                  href="#"
+                  class="text-white font-medium transition-all hover:text-slate-400"
+                  >Preços</a
+                >
+              </li>
+              <li class="paisagem-tablet:inline-block hidden">
+                <a
+                  href="#"
+                  class="text-white font-medium transition-all hover:text-slate-400"
+                  >Planos</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <a
+              href="#"
+              class="text-amber-400 font-semibold text-xl flex items-center space-x-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
+                />
+              </svg>
+              <span>Campus</span></a
+            >
+          </div>
+          <div>
+            <ul class="flex items-center space-x-6">
+              <button class="text-white transition-all hover:text-slate-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                  />
+                </svg>
+              </button>
+
+              <button
+                class="text-white transition-all paisagem-tablet:inline-block hidden hover:text-slate-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </button>
+
+              <li class="paisagem-tablet:inline-block hidden">
+                <a
+                  href="#"
+                  class="text-white font-medium bg-amber-500 rounded px-5 py-2"
+                  >Login</a
+                >
+              </li>
+              <button class="text-white transition-all hover:text-amber-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 9h16.5m-16.5 6.75h16.5"
+                  />
+                </svg>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

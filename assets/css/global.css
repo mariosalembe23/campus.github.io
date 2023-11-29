@@ -20,6 +20,7 @@ body {
   background-image: url("../images/back_full.jpg");
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 ul li a {
   font-size: 14.8px;
@@ -29,7 +30,7 @@ ul li a {
 }
 .customizedBackNavbar {
   backdrop-filter: blur(14px);
-  background-color: rgba(39, 39, 42, 0.664);
+  background-color: #27272aa9;
 }
 .logo_letter {
   opacity: 1;

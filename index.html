@@ -16,26 +16,32 @@
     <header class="w-full h-screen homePage">
       <div class="mask w-full h-full">
         <div
-          class="navbar fixed top-0 left-0 right-0 flex items-center justify-between paisagem-tablet:justify-around w-full px-5 py-5"
+          class="navbar transition-all fixed top-0 left-0 right-0 flex items-center justify-between paisagem-tablet:justify-around w-full px-5 py-5"
         >
+          <div class="flex items-center justify-center">
+            <a
+              href="#"
+              class="text-amber-400 justify-center font-semibold text-xl flex items-center space-x-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
+                />
+              </svg>
+              <span class="logo_letter transition-all">Campus</span></a
+            >
+          </div>
           <nav>
             <ul class="flex items-center space-x-8">
-              <button class="text-white transition-all hover:text-slate-400">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 stroke-2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
-              </button>
               <li class="paisagem-tablet:inline-block hidden">
                 <a
                   href="#"
@@ -68,30 +74,30 @@
           </nav>
 
           <div>
-            <a
-              href="#"
-              class="text-amber-400 font-semibold text-xl flex items-center space-x-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
-                />
-              </svg>
-              <span>Campus</span></a
-            >
-          </div>
-          <div>
             <ul class="flex items-center space-x-6">
-              <button class="text-white transition-all hover:text-slate-400">
+              <button
+                class="text-white transition-all hover:text-slate-400"
+                title="Pesquisar"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 stroke-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="text-white transition-all hover:text-slate-400"
+                title="Compartilhar"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -110,6 +116,7 @@
 
               <button
                 class="text-white transition-all paisagem-tablet:inline-block hidden hover:text-slate-400"
+                title="Avaliações"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,11 +137,14 @@
               <li class="paisagem-tablet:inline-block hidden">
                 <a
                   href="#"
-                  class="text-white font-medium bg-amber-500 rounded px-5 py-2"
+                  class="text-white transition-all hover:ring-4 ring-amber-100 ring-opacity-40 font-medium bg-amber-500 rounded px-5 py-2"
                   >Login</a
                 >
               </li>
-              <button class="text-white transition-all hover:text-amber-400">
+              <button
+                title="Menu"
+                class="text-white paisagem-tablet:hidden inline-block transition-all hover:text-amber-400"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -153,6 +163,144 @@
             </ul>
           </div>
         </div>
+
+        <!-- BANNER -->
+        <section class="pt-44 max-w-6xl w-full m-auto p-5">
+          <div class="text-center">
+            <h1
+              class="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-2xl font-bold text-slate-200"
+            >
+              Exploração Natural: Dicas e <br />
+              Aventuras para Campistas Avidos
+            </h1>
+            <p
+              class="text-slate-200 py-5 retrato-tablet:w-4/5 w-full m-auto font-medium"
+            >
+              Descubra o encanto do campismo. Dicas, histórias e aventuras ao ar
+              livre aguardam por você. Inspire-se e embarque na sua próxima
+              jornada!
+            </p>
+            <a
+              href="#"
+              class="text-white transition-all hover:ring-4 ring-amber-100 ring-opacity-40 font-medium px-5 py-2.5 rounded bg-amber-500"
+              >Continuar</a
+            >
+          </div>
+
+          <div
+            class="mt-20 grid retrato-tablet:grid-cols-2 grid-cols-1 gap-5 max-w-4xl w-full m-auto"
+          >
+            <div
+              class="bg-zinc-900 p-5 rounded shadow-lg h-80 flex flex-col justify-between"
+            >
+              <header>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8 text-amber-500"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 4.505a8.25 8.25 0 1011.672 8.214l-.46-.46a2.252 2.252 0 01-.422-.586l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 01-1.384-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.279-2.132z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </header>
+              <div>
+                <h5 class="text-amber-500 text-xl font-medium pb-2">
+                  Explorando o Desconhecido
+                </h5>
+                <p class="text-slate-200 text-[14px]">
+                  Acreditamos que o campismo é uma manifestação da força
+                  interior que nos impulsiona a enfrentar desafios e abraçar a
+                  beleza selvagem que o mundo tem a oferecer.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-zinc-900 p-5 rounded shadow-lg h-80 flex flex-col justify-between"
+            >
+              <header>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8 text-amber-500"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </header>
+              <div>
+                <h5 class="text-amber-500 text-xl font-medium pb-2">
+                  Criando Conexões Duradouras
+                </h5>
+                <p class="text-slate-200 text-[14px]">
+                  Buscamos promover experiências que fortaleçam os laços entre
+                  as pessoas e a natureza, cultivando momentos que permanecem
+                  eternamente na memória.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-amber-500 p-5 rounded shadow-lg h-80 flex flex-col justify-between"
+            >
+              <header>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8 text-zinc-900"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </header>
+              <div>
+                <h5 class="text-zinc-900 text-xl font-medium pb-2">
+                  Inspirando Aventura e Liberdade
+                </h5>
+                <p class="text-zinc-900 text-[14px]">
+                  Nosso objetivo é inspirar outros a abraçar seu espírito
+                  aventureiro, romper barreiras autoimpostas e experimentar a
+                  verdadeira liberdade que a natureza oferece.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-zinc-800 p-5 rounded shadow-lg h-80 flex flex-col justify-between"
+            >
+              <header>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8 text-amber-500"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </header>
+              <div>
+                <h5 class="text-amber-500 text-xl font-medium pb-2">
+                  Respeitando o Meio Ambiente
+                </h5>
+                <p class="text-slate-200 text-[14px]">
+                  Nosso compromisso é criar espaços de campismo que respeitem e
+                  protejam o meio ambiente, promovendo práticas sustentáveis e
+                  educando as pessoas sobre a importância da conservação.
+                </p>
+              </div>
+            </div>
+            <div
+          </div>
+        </section>
       </div>
     </header>
     <script src="./assets/js/main.js"></script>

@@ -25,5 +25,22 @@ ul li a {
   font-size: 14.8px;
 }
 .mask {
-  background-image: linear-gradient(to bottom, transparent, rgb(24 24 27));
+  background-image: linear-gradient(to bottom, transparent, #18181b);
+}
+.customizedBackNavbar {
+  backdrop-filter: blur(14px);
+  background-color: rgba(39, 39, 42, 0.664);
+}
+.logo_letter {
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  transition: opacity 3s ease-in-out, height 3s ease-in-out; /* Adiciona uma transição suave de 0.5 segundos */
+}
+.oculto {
+  opacity: 0;
+  height: 0;
+}
+p , small{
+  font-family: "Inter", sans-serif;
 }

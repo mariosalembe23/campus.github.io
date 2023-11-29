@@ -667,6 +667,22 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -713,6 +729,30 @@ video {
 
 .h-72 {
   height: 18rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[16\] {
+  height: 16;
+}
+
+.h-\[26rem\] {
+  height: 26rem;
+}
+
+.h-\[16rem\] {
+  height: 16rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[2\] {
+  height: 2;
 }
 
 .w-6 {
@@ -779,6 +819,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -789,6 +833,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-end {
@@ -837,6 +885,12 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .self-center {
   align-self: center;
 }
@@ -855,6 +909,14 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
 }
 
 .border {
@@ -956,6 +1018,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -996,6 +1063,22 @@ video {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
+.font-\[\] {
+  font-family: ;
+}
+
+.font-\[\'Inte\'\] {
+  font-family: 'Inte';
+}
+
+.font-\[\'Inter\'\] {
+  font-family: 'Inter';
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1020,6 +1103,22 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1034,6 +1133,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -1093,6 +1196,25 @@ video {
 .text-amber-100 {
   --tw-text-opacity: 1;
   color: rgb(254 243 199 / var(--tw-text-opacity));
+}
+
+.text-amber-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 211 77 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-amber-200 {
+  --tw-text-opacity: 1;
+  color: rgb(253 230 138 / var(--tw-text-opacity));
+}
+
+.text-zinc-950 {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 11 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1155,6 +1277,26 @@ video {
   --tw-ring-color: rgb(245 158 11 / var(--tw-ring-opacity));
 }
 
+.ring-zinc-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(113 113 122 / var(--tw-ring-opacity));
+}
+
+.ring-zinc-700 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(63 63 70 / var(--tw-ring-opacity));
+}
+
+.ring-zinc-800 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(39 39 42 / var(--tw-ring-opacity));
+}
+
+.ring-zinc-600 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(82 82 91 / var(--tw-ring-opacity));
+}
+
 .ring-opacity-40 {
   --tw-ring-opacity: 0.4;
 }
@@ -1194,6 +1336,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.hover\:ring-amber-500:hover {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(245 158 11 / var(--tw-ring-opacity));
+}
+
 @media (max-width: 599px) {
   .small\:-m-2 {
     margin: -0.5rem;
@@ -1221,6 +1368,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .retrato-tablet\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .retrato-tablet\:flex-row {
     flex-direction: row;
   }
@@ -1242,6 +1393,10 @@ video {
 
   .paisagem-tablet\:hidden {
     display: none;
+  }
+
+  .paisagem-tablet\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .paisagem-tablet\:justify-around {

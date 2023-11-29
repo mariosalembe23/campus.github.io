@@ -43,7 +43,8 @@ ul li a {
   height: 0;
 }
 p,
-small , .beneficios_list li{
+small,
+.beneficios_list li {
   font-family: "Inter", sans-serif;
 }
 .card_price {
@@ -51,4 +52,8 @@ small , .beneficios_list li{
     background-color: #18181b; */
 
   background-image: linear-gradient(to bottom, #f59e0b, #18181b);
+}
+input,
+textarea {
+  font-family: "Inter", sans-serif;
 }

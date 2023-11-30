@@ -57,3 +57,6 @@ input,
 textarea {
   font-family: "Inter", sans-serif;
 }
+textarea {
+  resize: none;
+}

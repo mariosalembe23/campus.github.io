@@ -57,8 +57,8 @@ textarea {
   background-color: #3a383886;
   backdrop-filter: blur(1px);
 }
-.animatedBackMask{
-    animation: backgroundMaskEffect  .5s ease-in-out forwards
+.animatedBackMask {
+  animation: backgroundMaskEffect 0.5s ease-in-out forwards;
 }
 .share_page {
   transform: scale(0.5);
@@ -71,7 +71,9 @@ textarea {
 .closeBoxShare {
   animation: moveShareBoxOut 0.4s ease-in-out forwards;
 }
-
+.card_comment {
+  background-image: linear-gradient(to bottom, #27272a, transparent);
+}
 @keyframes moveShareBox {
   from {
     transform: scale(0.5);
@@ -94,13 +96,13 @@ textarea {
   }
 }
 @keyframes backgroundMaskEffect {
-    0%{
-        backdrop-filter: blur(1px);
-    }
-    50%{
-        backdrop-filter: blur(2px);
-    }
-    100%{
-        backdrop-filter: blur(5px);
-    }
+  0% {
+    backdrop-filter: blur(1px);
+  }
+  50% {
+    backdrop-filter: blur(2px);
+  }
+  100% {
+    backdrop-filter: blur(5px);
+  }
 }

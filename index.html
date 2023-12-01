@@ -10,7 +10,13 @@
     <title>Campus - Site de Campismo</title>
     <link rel="stylesheet" href="./assets/css/minimal.css" />
     <!-- tailwind css link -->
-    <link rel="stylesheet" href="./assets/dist/tailwind.css" />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="stylesheet"
+      href="./assets/dist/tailwind.css"
+    />
   </head>
   <body class="bg-zinc-900 transition-all">
     <header class="w-full h-screen homePage" id="inicio">
@@ -948,6 +954,6 @@
       </div>
     </footer>
 
-    <script src="./assets/js/minimal.js"></script>
+    <script src="./assets/js/minimal.js" defer></script>
   </body>
 </html>

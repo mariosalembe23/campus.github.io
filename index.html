@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/global.css" />
-    <!-- tailwind css link -->
-    <link rel="stylesheet" href="./assets/dist/tailwind.css" />
     <meta
       name="description"
       content="Um Site de Campismo Onde Pessoas Podem sair para Aventuras Divertidas"
     />
     <title>Campus - Site de Campismo</title>
+    <link rel="stylesheet" href="./assets/css/minimal.css" />
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="./assets/dist/tailwind.css" />
   </head>
   <body class="bg-zinc-900 transition-all">
     <header class="w-full h-screen homePage" id="inicio">
@@ -20,7 +20,7 @@
         >
           <div class="flex items-center justify-center">
             <a
-              href="#"
+              href="index.html"
               class="text-amber-400 justify-center font-semibold text-xl flex items-center space-x-3"
             >
               <svg
@@ -40,7 +40,7 @@
               <span class="logo_letter transition-all">Campus</span></a
             >
           </div>
-          <nav>
+          <nav class="navbar_desktop">
             <ul class="flex items-center space-x-8">
               <li class="paisagem-tablet:inline-block hidden">
                 <a
@@ -82,72 +82,58 @@
 
           <div>
             <ul class="flex items-center space-x-6">
-              <!-- <button
-                class="text-white transition-all hover:text-slate-400"
-                title="Pesquisar"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 stroke-2"
+              <li>
+                <button
+                  onclick="showBoxShare()"
+                  class="text-white transition-all hover:text-slate-400"
+                  title="Compartilhar"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
-              </button> -->
-              <button
-                onclick="showBoxShare()"
-                class="text-white transition-all hover:text-slate-400"
-                title="Compartilhar"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                    />
+                  </svg>
+                </button>
+              </li>
 
               <li class="paisagem-tablet:inline-block hidden">
-                <a
-                  href="#"
+                <a target="_blank"
+                  href="https://form-validation-tawny-eta.vercel.app/"
                   class="bg-amber-500 text-[15px] font-medium transition-all hover:ring-4 ring-amber-100 ring-opacity-40 rounded px-5 py-2 text-white"
                   >Login</a
                 >
               </li>
-              <button
-                title="Menu"
-                class="text-white paisagem-tablet:hidden inline-block transition-all hover:text-amber-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
+              <li>
+                <button
+                  onclick="OpenOffCanvas()"
+                  title="Menu"
+                  class="text-white paisagem-tablet:hidden inline-block transition-all hover:text-amber-400"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 9h16.5m-16.5 6.75h16.5"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 9h16.5m-16.5 6.75h16.5"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -170,7 +156,7 @@
             </p>
             <div class="flex flex-wrap gap-3 justify-center w-full">
               <a
-                href="#"
+                href="https://form-validation-tawny-eta.vercel.app/" target="_blank"
                 class="text-white flex justify-between w-48 mt-3 transition-all hover:ring-4 ring-amber-100 ring-opacity-40 font-medium px-3 py-2.5 rounded bg-amber-500"
                 >Continuar
                 <svg
@@ -187,7 +173,7 @@
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://form-validation-tawny-eta.vercel.app/"
                 class="text-white flex justify-between w-48 mt-3 transition-all hover:ring-4 ring-zinc-300 ring-opacity-40 font-medium px-3 py-2.5 rounded bg-zinc-900"
                 >Inscreva-se
                 <svg
@@ -231,9 +217,9 @@
               </svg>
             </header>
             <div>
-              <h5 class="text-amber-500 text-xl font-medium pb-2">
+              <p class="text-amber-500 text-xl font-medium pb-2">
                 Explorando o Desconhecido
-              </h5>
+              </p>
               <p class="text-slate-200 text-[14px]">
                 Acreditamos que o campismo é uma manifestação da força interior
                 que nos impulsiona a enfrentar desafios e abraçar a beleza
@@ -257,9 +243,9 @@
               </svg>
             </header>
             <div>
-              <h5 class="text-amber-500 text-xl font-medium pb-2">
+              <span class="text-amber-500 text-xl font-medium pb-2">
                 Criando Conexões Duradouras
-              </h5>
+              </span>
               <p class="text-slate-200 text-[14px]">
                 Buscamos promover experiências que fortaleçam os laços entre as
                 pessoas e a natureza, cultivando momentos que permanecem
@@ -285,9 +271,9 @@
               </svg>
             </header>
             <div>
-              <h5 class="text-zinc-900 text-xl font-medium pb-2">
+              <span class="text-zinc-900 text-xl font-medium pb-2">
                 Inspirando Aventura e Liberdade
-              </h5>
+              </span>
               <p class="text-zinc-900 text-[14px]">
                 Nosso objetivo é inspirar outros a abraçar seu espírito
                 aventureiro, romper barreiras autoimpostas e experimentar a
@@ -311,9 +297,9 @@
               </svg>
             </header>
             <div>
-              <h5 class="text-amber-500 text-xl font-medium pb-2">
+              <span class="text-amber-500 text-xl font-medium pb-2">
                 Respeitando o Meio Ambiente
-              </h5>
+              </span>
               <p class="text-slate-200 text-[14px]">
                 Nosso compromisso é criar espaços de campismo que respeitem e
                 protejam o meio ambiente, promovendo práticas sustentáveis e
@@ -339,9 +325,9 @@
               >
                 <span class="text-xl font-bold text-amber-100">1</span>
               </div>
-              <h6 class="text-slate-200 font-medium text-xl">
+              <h3 class="text-slate-200 font-medium text-xl">
                 Exploração Autêntica
-              </h6>
+              </h3>
             </header>
             <p class="text-white text-[14px] py-5">
               Acreditamos que a verdadeira magia do campismo reside na
@@ -358,9 +344,9 @@
               >
                 <span class="text-xl font-bold text-amber-100">2</span>
               </div>
-              <h6 class="text-slate-200 font-medium text-xl">
+              <h3 class="text-slate-200 font-medium text-xl">
                 Experiências Personalizadas
-              </h6>
+              </h3>
             </header>
             <p class="text-white text-[14px] py-5">
               Cada expedição Campus é única, assim como cada participante.
@@ -376,9 +362,9 @@
               >
                 <span class="text-xl font-bold text-amber-100">3</span>
               </div>
-              <h6 class="text-slate-200 font-medium text-xl">
+              <h3 class="text-slate-200 font-medium text-xl">
                 Desconectar e Reconectar
-              </h6>
+              </h3>
             </header>
             <p class="text-white text-[14px] py-5">
               Na era digital, valorizamos o poder de desconectar para se
@@ -408,9 +394,9 @@
                   />
                 </svg>
               </div>
-              <h6 class="text-slate-200 font-medium text-xl">
+              <h3 class="text-slate-200 font-medium text-xl">
                 Junte-se a Nós na Jornada
-              </h6>
+              </h3>
             </header>
             <p class="text-white text-[14px] py-5">
               Se você está pronto para escapar da rotina, abraçar a natureza e
@@ -419,7 +405,7 @@
             </p>
             <footer class="flex justify-end">
               <a
-                href="#"
+                href="https://multi-step-form-nine-ochre.vercel.app/"
                 class="bg-zinc-900 ring-1 ring-zinc-700 transition-all font-medium hover:ring-amber-500 rounded px-5 py-2 text-white text-[15px]"
                 >Começar</a
               >
@@ -431,9 +417,9 @@
       <!-- PRICE ZONE -->
       <section class="mt-36 max-w-6xl m-auto w-full" id="planos">
         <header class="text-center">
-          <h2 class="text-slate-200 text-3xl font-semibold">
+          <h4 class="text-slate-200 text-3xl font-semibold">
             Pague Pelos Melhores Planos!
-          </h2>
+          </h4>
         </header>
         <div
           class="paisagem-tablet:grid-cols-3 retrato-tablet:grid-cols-2 grid-cols-1 grid items-center gap-4 max-w-6xl m-auto w-full mt-16"
@@ -469,6 +455,7 @@
             </div>
             <footer class="text-center">
               <button
+                title="Comprar Plano"
                 class="bg-zinc-900 shadow-lg ring-1 text-[15px] font-medium ring-zinc-800 transition-all hover:ring-amber-500 rounded px-5 py-2 text-white"
               >
                 Comprar
@@ -511,6 +498,7 @@
             </div>
             <footer class="text-center">
               <button
+                title="Comprar Plano"
                 class="bg-zinc-900 shadow-lg ring-1 text-[15px] font-medium ring-zinc-800 transition-all hover:ring-amber-500 rounded px-5 py-2 text-white"
               >
                 Comprar
@@ -551,6 +539,7 @@
             </div>
             <footer class="text-center">
               <button
+                title="Comprar Plano"
                 class="bg-zinc-900 shadow-lg ring-1 text-[15px] font-medium ring-zinc-800 transition-all hover:ring-amber-500 rounded px-5 py-2 text-white"
               >
                 Comprar
@@ -561,11 +550,11 @@
       </section>
       <section id="avaliacoes" class="mt-36 max-w-6xl m-auto w-full">
         <header>
-          <h3
+          <h5
             class="text-slate-200 paisagem-tablet:text-start text-center text-2xl font-semibold pb-8 px-5"
           >
             As Pessoas Também Dizem...
-          </h3>
+          </h5>
         </header>
         <div
           class="p-0 grid retrato-tablet:grid-cols-2 grid-cols-1 paisagem-tablet:grid-cols-3 gap-5"
@@ -668,9 +657,9 @@
           class="grid grid-cols-1 items-center paisagem-tablet:grid-cols-2 gap-3"
         >
           <div class="p-1 paisagem-tablet:text-start text-center">
-            <h3 class="text-zinc-300 text-2xl font-semibold">
+            <h6 class="text-zinc-300 text-2xl font-semibold">
               Conecte-se Conosco: Envie-nos uma Mensagem Inesquecível!
-            </h3>
+            </h6>
             <p class="py-4 text-zinc-300">
               Estamos aqui para ouvir suas histórias, responder a todas as suas
               perguntas e tornar cada interação tão especial quanto as aventuras
@@ -714,6 +703,7 @@
                 </div>
                 <div class="text-end">
                   <button
+                    title="Enviar Mensagem"
                     class="bg-zinc-950 transition-all hover:ring-4 hover:ring-opacity-30 hover:bg-amber-500 font-medium px-5 ring-1 ring-amber-500 py-2.5 text-white rounded"
                   >
                     <svg
@@ -745,7 +735,7 @@
         </div>
         <div>
           <a
-            href="#"
+            href="https://www.instagram.com/mariosalembe22"
             class="bg-zinc-950 text-[14px] transition-all hover:ring-4 hover:ring-opacity-30 hover:bg-amber-500 font-medium px-5 ring-1 ring-amber-500 py-2 text-white rounded"
           >
             Desenvolvedor
@@ -757,7 +747,7 @@
       <div
         class="fixed top-0 items-center justify-center left-0 right-0 z-20 w-full h-screen hidden backgroundMask"
       >
-        <aside class="share_page p-5 bg-transparent rounded max-w-3xl w-full">
+        <aside class="share_box p-5 bg-transparent rounded max-w-3xl w-full">
           <header class="flex justify-end">
             <button
               onclick="closeBoxShare()"
@@ -783,11 +773,16 @@
             <div
               class="w-full bg-zinc-900 py-3.5 px-4 rounded-lg ring-1 ring-amber-500"
             >
-              <p class="text-white font-medium truncate text-center">
+              <p
+                id="link_share"
+                class="text-white font-medium truncate text-center"
+              >
                 https://campus.com.ao/vercel.app
               </p>
             </div>
             <button
+              onclick="copiarTexto()"
+              title="Copiar Link"
               class="bg-amber-600 text-white font-medium px-5 py-3 rounded transition-all hover:ring-4 ring-amber-300 ring-opacity-50"
             >
               Copiar
@@ -796,11 +791,166 @@
         </aside>
       </div>
 
-      <!-- <aside class="offcanvas w-full">
+      <div
+        class="offcanvasBack hidden w-full h-screen fixed top-0 left-0 right-0 z-30"
+      >
+        <aside
+          class="offcanvas bg-zinc-800 rounded-l-xl shadow-lg fixed right-0 h-screen p-7"
+        >
+          <div class="w-full h-full relative">
+            <header class="flex items-center justify-between">
+              <h6 class="text-[18px] text-zinc-300 font-medium">Menu</h6>
+              <button
+                onclick="closeOffCanvas()"
+                title="Fechar Menu"
+                class="text-white transition-all hover:text-zinc-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </header>
+            <nav class="mt-10">
+              <ul class="flex flex-col space-y-6">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="flex link_offcanvas items-center text-white font-medium transition-all hover:text-zinc-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 me-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                      />
+                    </svg>
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#sobre"
+                    class="flex link_offcanvas items-center text-white font-medium transition-all hover:text-zinc-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 me-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
 
-      </aside> -->
+                    Sobre
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#planos"
+                    class="flex link_offcanvas items-center text-white font-medium transition-all hover:text-zinc-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 me-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+                      />
+                    </svg>
+
+                    Planos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#avaliacoes"
+                    class="flex link_offcanvas items-center text-white font-medium transition-all hover:text-zinc-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 me-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                      />
+                    </svg>
+
+                    Avaliações
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contacto"
+                    class="flex link_offcanvas items-center text-white font-medium transition-all hover:text-zinc-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 me-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
+                      />
+                    </svg>
+
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <footer class="absolute bottom-1 w-full">
+              <button
+                class="w-full bg-amber-500 text-zinc-900 transition-all hover:ring-4 ring-amber-200 ring-opacity-50 font-medium py-2.5 rounded"
+              >
+                Login
+              </button>
+            </footer>
+          </div>
+        </aside>
+      </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/minimal.js"></script>
   </body>
 </html>

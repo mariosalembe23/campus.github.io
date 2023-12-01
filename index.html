@@ -12,8 +12,8 @@
     />
     <title>Campus - Site de Campismo</title>
   </head>
-  <body class="bg-zinc-900">
-    <header class="w-full h-screen homePage">
+  <body class="bg-zinc-900 transition-all">
+    <header class="w-full h-screen homePage" id="inicio">
       <div class="mask w-full h-full">
         <div
           class="navbar transition-all fixed top-0 left-0 right-0 flex items-center justify-between paisagem-tablet:justify-around w-full px-5 py-5"
@@ -44,28 +44,28 @@
             <ul class="flex items-center space-x-8">
               <li class="paisagem-tablet:inline-block hidden">
                 <a
-                  href="#"
+                  href="#inicio"
                   class="text-white font-medium transition-all hover:text-slate-400"
                   >Inicio</a
                 >
               </li>
               <li class="paisagem-tablet:inline-block hidden">
                 <a
-                  href="#"
+                  href="#sobre"
                   class="text-white font-medium transition-all hover:text-slate-400"
                   >Sobre</a
                 >
               </li>
               <li class="paisagem-tablet:inline-block hidden">
                 <a
-                  href="#"
+                  href="#planos"
                   class="text-white font-medium transition-all hover:text-slate-400"
                   >Planos</a
                 >
               </li>
               <li class="paisagem-tablet:inline-block hidden">
                 <a
-                  href="#"
+                  href="#contacto"
                   class="text-white font-medium transition-all hover:text-slate-400"
                   >Contacto</a
                 >
@@ -95,6 +95,7 @@
                 </svg>
               </button>
               <button
+              onclick="showBoxShare()"
                 class="text-white transition-all hover:text-slate-400"
                 title="Compartilhar"
               >
@@ -336,7 +337,7 @@
         </div>
       </section>
 
-      <section class="mt-36 max-w-6xl m-auto w-full">
+      <section class="mt-36 max-w-6xl m-auto w-full" id="sobre">
         <header class="text-center">
           <h2 class="text-slate-200 font-semibold text-3xl">
             Empenhados para Gerar novas Emoções!
@@ -441,7 +442,7 @@
       </section>
 
       <!-- PRICE ZONE -->
-      <section class="mt-36 max-w-6xl m-auto w-full">
+      <section class="mt-36 max-w-6xl m-auto w-full" id="planos">
         <header class="text-center">
           <h2 class="text-slate-200 text-3xl font-semibold">
             Pague Pelos Melhores Planos!
@@ -572,9 +573,9 @@
         </div>
       </section>
 
-      <section class="mt-36 max-w-6xl m-auto w-full">
+      <section class="mt-36 max-w-6xl m-auto w-full" id="contacto">
         <div class="grid grid-cols-1 paisagem-tablet:grid-cols-2 gap-3">
-          <div class="p-4 paisagem-tablet:text-start text-center">
+          <div class="p-1 paisagem-tablet:text-start text-center">
             <h3 class="text-zinc-300 text-2xl font-semibold">
               Conecte-se Conosco: Envie-nos uma Mensagem Inesquecível!
             </h3>
@@ -587,7 +588,7 @@
               🌟
             </p>
           </div>
-          <div class="p-5">
+          <div class="paisagem-tablet:p-5 p-2">
             <form>
               <div class="grid px-4 items-center grid-cols-1 gap-3">
                 <div class="w-full space-y-3">
@@ -653,14 +654,56 @@
           </span>
         </div>
         <div>
-          <button
+          <a href="#"
             class="bg-zinc-950 text-[14px] transition-all hover:ring-4 hover:ring-opacity-30 hover:bg-amber-500 font-medium px-5 ring-1 ring-amber-500 py-2 text-white rounded"
           >
             Desenvolvedor
-          </button>
+          </a>
         </div>
       </div>
+
+      <!-- BACKGROUND SUSPENSO -->
+      <div
+        class="fixed top-0  items-center justify-center left-0 right-0 z-20 w-full h-screen hidden backgroundMask"
+      >
+        <aside class="share_page p-5 bg-transparent rounded max-w-3xl w-full">
+          <header class="flex justify-end">
+            <button
+            onclick="closeBoxShare()"
+            title="Fechar Caixa"
+              class="w-8 h-8 rounded-full transition-all hover:ring-amber-500 bg-zinc-900 text-white ring-1 ring-zinc-700 flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 stroke-2"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </header>
+
+          <div class="flex gap-4 flex-col items-center justify-between mt-7">
+            <div class="w-full bg-zinc-900 py-3.5 px-4 rounded-lg ring-1 ring-amber-500">
+              <p class="text-white font-medium truncate text-center">
+                https://campus.com.ao/vercel.app
+              </p>
+            </div>
+            <button
+              class="bg-amber-600 text-white font-medium px-5 py-3 rounded transition-all hover:ring-4 ring-amber-300 ring-opacity-50"
+            >
+              Copiar
+            </button>
+          </div>
+        </aside>
+      </div>
     </footer>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
